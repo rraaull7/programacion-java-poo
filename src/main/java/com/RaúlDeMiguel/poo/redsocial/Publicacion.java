@@ -76,8 +76,8 @@ System.out.println(this.hora);
 	
 }
 	public void darLike() {
-		this.likes +=likes;
-		System.out.println(likes);
+		this.likes ++;
+		
 	}
 	
 
@@ -87,7 +87,10 @@ System.out.println(this.hora);
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+Publicacion p = new Publicacion();
+p.mostrar();
+p.darLike();
+p.mostrar();
 		
 		
 		

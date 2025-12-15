@@ -139,7 +139,6 @@ public class PerfilRedSocial {
  
 	public void crearPublicacion(String tituloPub) {
 		Publicacion p = new Publicacion();
-		p.setTexto(tituloPub);
 		this.publicaciones.add(p);
 	}
  
@@ -152,5 +151,6 @@ public class PerfilRedSocial {
 		}
 	}
 }
+
 
 

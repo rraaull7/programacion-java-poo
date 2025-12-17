@@ -6,24 +6,32 @@ public class GeneradorPerfiles {
 
 
 	
-	public static String crearPerfilPrueba(String nombreUsuario) {
+	public static PerfilRedSocial crearPerfilPrueba(String nombreUsuario) {
 		
 	PerfilRedSocial perfil = new PerfilRedSocial();
-		perfil.setUsuario(nombreUsuario);
-		perfil.setNombre();
-		perfil.setBiografia();
-		perfil.setPais();
-		
+	perfil.setNombre(nombreUsuario);
+	perfil.setPais("España");
+		return perfil;
 	}
 
-	public static String crearPerfilPrueba(String nombreUsuario) {
-		PerfilRedSocial perfil = new PerfilRedSocial();
+	public static PerfilRedSocial crearPerfilPrueba(String nombreUsuario, int numeroPublicaciones) {
+		PerfilRedSocial perfil = crearPerfilPrueba(nombreUsuario);
+		return perfil;
 
-		
-		
-		
 	}
 
 	
+	
+	public static void main(String[] args) {
+		PerfilRedSocial perfil = new PerfilRedSocial();
+		perfil.setNombre("Raul");
+		System.out.println(perfil.getNombre());
+		perfil.setNombre("Ivan");
+		System.out.println(perfil.getNombre());
+		
+		
+		
+		
+	}
 
 }
